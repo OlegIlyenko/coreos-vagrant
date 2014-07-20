@@ -1,0 +1,20 @@
+{
+  "id": "redis-master-3",
+  "desiredState": {
+    "manifest": {
+      "version": "v1beta1",
+      "id": "redis-master-3",
+      "containers": [{
+        "name": "master",
+        "image": "192.168.2.104:5000/redis",
+        "ports": [{
+          "containerPort": 6379,
+          "hostPort": 6379
+        }]
+      }]
+    }
+  },
+  "labels": {
+    "name": "redis-master-3"
+  }
+}
